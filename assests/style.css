@@ -207,10 +207,11 @@ header ul li a:hover{
     transition: 0.7s;
     filter: grayscale(0.6) ;
     
+    
    
 }
 .thumb li:hover{
-    transition: 0.5s;
+    transition: 0.6s;
     transform: translateY(-15px);
     filter: grayscale(0);
     filter: brightness(1);
@@ -220,7 +221,8 @@ header ul li a:hover{
 }
 
 .thumb li img{
-    max-width: 60px;
+    max-width:60px;
+    filter: drop-shadow(10px 10px 10px rgb(11, 104, 42));
     
 }
 #seta{
@@ -228,7 +230,7 @@ header ul li a:hover{
     top: -30px;
     transform: rotate(18deg);
     left: 240px;
-   
+    filter: drop-shadow(2px 10px 2px rgb(12, 158, 61));
     
     max-width: 150px;
    
@@ -491,6 +493,7 @@ p.dark-mode{
  #seta{
      max-width: 100px;
      left: 220px;
+     
  }
  /* MENU */
  .nav-list {
@@ -656,24 +659,110 @@ main{
     font-size: 15vh;
     font-family: 'bonitinha';
     font-weight: 100;
-    
+    text-shadow: 2px 2px 22px black;
     color: #fff;
 }
 #cardapio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #034e2f;
-    height: 50%;
+    
+    
+    background-color: #fdfffe;
+    margin-bottom: 10px;
+    height: 118vh;
     width: 100%;
    
 }
 .card{
+    margin: 0;
+    padding: 0;
+    width: 16%;
+    height: 45vh;
+    border-radius: 10px;
+    margin: 45px;
+    box-shadow: 5px 2px 10px #017143;
+    transition: 0.7s;
+}
+#card1{
+    position: absolute;
+    right: 4%;
+}
+#card2{
+    position: absolute;
+    right: 27%;
+}
+#card3{
+    position: absolute;
+    right: 50%;
+}
+#card4{
+    position: absolute;
+    right: 73%;
+}
+#card5{
+    position: absolute;
+    bottom: -172%;
+    right: 50%;
+}
+#card6{
+    position: absolute;
+    bottom: -172%;
+    right: 4%;
+}
+#card7{
+    position: absolute;
+    bottom: -172%;
+    right: 27%;
+}
+#card8{
+    position: absolute;
+    bottom: -172%;
+    right: 73%;
+}
+.barra-informacoes{
+    margin: 0;
+    background-color: #017143;
+    width: 101%;
+    height: 33%;
+    left: -1px;
+    position: absolute;
+    top: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.card:hover{
+    background-color: #1bc290;
     width: 20%;
-    height: 50vh;
-    border: 2px solid black;
-    margin: 30px;
+    height: 51vh;
+    transform: translate(15px, 15px);
+    border-radius: 16px;
+}
+.info{
+ color: #fff;
+ font-size: 20px;
+ font-family: 'Amatic SC', cursive;
+}
+
+
+/* footer */
+footer{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #017143;
+    height: 100px;
+    width: 100%;
+    box-shadow:6px 2px 21px black;
+   
+}
+h3{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: underline 5px white;
 }
 
